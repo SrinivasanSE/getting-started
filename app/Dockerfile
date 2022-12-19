@@ -4,5 +4,5 @@ WORKDIR /app
 COPY . .
 RUN yarn install --production
 ENTRYPOINT ["node"]
-CMD ["node", "src/index.js"]
+CMD ["src/index.js"]
 EXPOSE 3000
