@@ -20,6 +20,9 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: todos
+    ports:
+      - 3306:3306
+      - 33060:33060
 
 volumes:
   todo-mysql-data:
